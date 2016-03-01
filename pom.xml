@@ -11,6 +11,7 @@
     <properties>
         <allure.version>1.4.16</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 
