@@ -66,12 +66,20 @@ public class UserDegreeCandidate {
     }
 
     public UserDegreeCandidate setRandomUser() {
-        this.setName(String.format("%s %s",
-                StringHelper.generateRandomString(4, 10),
-                StringHelper.generateRandomString(4, 10)));
-        this.setLastName(StringHelper.generateRandomString(4,10));
+        this.setName("Max");
+        this.setLastName("Maximov");
         this.seteMail((StringHelper.generateRandomEmail()));
         setPass("123456qwerty");
         return this;
     }
+
+//    public UserDegreeCandidate setRandomUser() {
+//        this.setName(String.format("%s %s",
+//                StringHelper.generateRandomString(4, 10),
+//                StringHelper.generateRandomString(4, 10)));
+//        this.setLastName(StringHelper.generateRandomString(4,10));
+//        this.seteMail((StringHelper.generateRandomEmail()));
+//        setPass("123456qwerty");
+//        return this;
+//    }
 }

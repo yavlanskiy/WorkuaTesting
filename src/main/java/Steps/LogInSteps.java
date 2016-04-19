@@ -1,6 +1,7 @@
 package Steps;
 
 import Components.LogInComponents;
+import Model.UserDegreeCandidate;
 import ru.yandex.qatools.allure.annotations.Step;
 
 /**
@@ -19,6 +20,19 @@ public class LogInSteps {
     public void logIn(String email, String pass){
         logInComponents.getEmailInput().setValue(email);
         logInComponents.getPassportInput().setValue(pass);
+        logInComponents.getLoginButton().click();
+    }
+
+    @Step("Login")
+    public void logIn(UserDegreeCandidate candidate){
+        logInComponents.getEmailInput().setValue(candidate.geteMail());
+        logInComponents.getPassportInput().setValue(candidate.getPass());
+        logInComponents.getLoginButton().click();
+    }
+
+    @Step("Login")
+    public void logInNotName(UserDegreeCandidate candidate){
+        logInComponents.getPassportInput().setValue(candidate.getPass());
         logInComponents.getLoginButton().click();
     }
 

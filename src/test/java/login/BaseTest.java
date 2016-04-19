@@ -5,6 +5,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 /**
  * Created by YavlanskiyMS on 26.02.2016.
+ * BaseTest
  */
 public class BaseTest {
 

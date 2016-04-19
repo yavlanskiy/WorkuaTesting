@@ -8,7 +8,7 @@ import Model.UserDegreeCandidate;
  * Created by KAIN on 28.02.2016.
  * RegistrationUserDegreeSteps
  */
-public class RegistrationUserDegreeSteps {
+public class RegistrationUserDegreeSteps extends RegistrationSteps {
 
     RegistrationComponents registrationComponents;
 

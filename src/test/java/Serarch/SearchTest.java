@@ -67,7 +67,7 @@ public class SearchTest extends BaseTest {
 
     @Test(description = "Test verifies that required word is present in the job description.")
     public void inJobDescriptionShouldPresentRequestWord() {
-        String jobTitle = "сантехник";
+        String jobTitle = "продавец";
         searchSteps.searchPositionInput(jobTitle);
         resultSteps.getFirstElementList().click();
 
