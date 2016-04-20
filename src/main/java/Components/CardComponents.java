@@ -11,6 +11,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class CardComponents {
 
     public ElementsCollection getDescriptionPosition(){
-        return $$(".overflow.wordwrap p");
+        return $$(".overflow.wordwrap");
     }
 }

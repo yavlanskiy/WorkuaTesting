@@ -68,11 +68,14 @@ public class SearchTest extends BaseTest {
     @Test(description = "Test verifies that required word is present in the job description.")
     public void inJobDescriptionShouldPresentRequestWord() {
         String jobTitle = "продавец";
+        searchSteps.setSearchLocation("Харьков");
         searchSteps.searchPositionInput(jobTitle);
         resultSteps.getFirstElementList().click();
 
         Assert.assertTrue(
-                cardSteps.contains(cardSteps.getDescriptionPosition(), jobTitle));
+                cardSteps.contains(cardSteps.getDescriptionPosition(), jobTitle)
+                        ||
+                        cardSteps.contains(cardSteps.getDescriptionPosition(), "про"));
     }
 
     @Test(description = "Test verifies that there is a vacancy in the desired location")
@@ -89,7 +92,7 @@ public class SearchTest extends BaseTest {
     public void searchByLocationNextPage() {
         String locationSearch = "Харьков";
         searchSteps.setSearchLocation(locationSearch);
-        searchSteps.searchPositionInput("Тестировщик");
+        searchSteps.searchPositionInput("реализатор");
         resultSteps.getNextPage();
         resultSteps.getLastElementList().click();
 

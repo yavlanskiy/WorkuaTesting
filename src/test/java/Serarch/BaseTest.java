@@ -1,5 +1,7 @@
 package Serarch;
 
+import com.codeborne.selenide.Configuration;
+
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
 
