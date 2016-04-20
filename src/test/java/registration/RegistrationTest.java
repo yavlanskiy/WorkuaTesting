@@ -23,7 +23,7 @@ public class RegistrationTest extends BaseTest {
         logInSteps = new LogInSteps();
     }
 
-    @Test(description = "")
+    @Test(description = "Registration random user")
     public void registrationRandomUser() {
         UserDegreeCandidate candidate = new UserDegreeCandidate().setRandomUser();
         registrationUserDegreeSteps.registrationUserDegree(candidate);
@@ -34,7 +34,7 @@ public class RegistrationTest extends BaseTest {
         registrationUserDegreeSteps.logOut();
     }
 
-    @Test(description = "")
+    @Test(description = "Registration random user and logIn")
     public void registrationRandomUserAndLogIn() {
         UserDegreeCandidate candidate = new UserDegreeCandidate().setRandomUser();
         registrationUserDegreeSteps.registrationUserDegree(candidate);
